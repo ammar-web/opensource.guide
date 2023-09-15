@@ -1,13 +1,17 @@
+/* MINOR RECTIFICATIONS IN THE BELOW CODE */
+
 .anchorjs-link {
-  transition: all .25s linear;
-  color: $gray-light;
+  transition: all 0.25s linear;
+  color: $gray-light; // Replace with your desired color
 
   &:hover {
-    color: $gray;
+    color: $gray; // Replace with your desired hover color
     text-decoration: none;
   }
 }
 
+/* Remove !important if possible and use more specific selectors if needed */
 *:hover > .anchorjs-link {
-  margin-left: -1.125em !important;
+  margin-left: -1.125em;
 }
+
